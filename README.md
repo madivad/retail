@@ -13,7 +13,7 @@ quite simply, command followed by folder name, eg
 this will monitor all files that appear in the log directory under the users home directory.
 
 ##todo:
-Well, there's a few things to do namelt:
+Well, there's a few things to do namely:
 - gracefully handle a file that are no longer present
 - gracefully handle non text/ASCII based files 
 - limit to files of a particular type
@@ -23,7 +23,8 @@ Well, there's a few things to do namelt:
 - give me some ideas?
 
 ##Special note:
-**I did not write this. This is not my code**  
+***I did not write this. This is not my code***  
+
 I have published this [with permission](http://serverfault.com/a/542580/322904) because it has become EXTREMELY useful to me and I will eventually make some changes to make it more suitable for my needs. But for right now, it works PERFECTLY. In fact, I will gladly hand this repo over to Jack if he so desires, alternatively, feel free to pull and push any changes as you see fit. You, [Sir Jack](http://serverfault.com/users/142829/jack), have answered an age old question that has been unanswered at the command line level (so far as I've determined).
 
 My use case scenario is I have a script that monitors a local device and reports it's value every second. That script appends the new value to an existing file based on the date. When the date increments, the filename changes. This filename would not exist when the `tail` was initially run. Hence, `retail` and it's like invoking a new tail every time it comes around adding new files as required. 
