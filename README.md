@@ -1,18 +1,18 @@
 # retail
-##tail -f on a folder adding new files after implementation
+## tail -f on a folder adding new files after implementation
 
 I called this re(-)tail because it's like creating a whole new instance of tail without actually invoking it. 
 
 The premise of this is for monitoring a folder where new logs can be added and will be picked up by this command.
 
-##Usage:
+## Usage:
 quite simply, command followed by folder name, eg
 
     $ retail ~/logs
 
 this will monitor all files that appear in the log directory under the users home directory.
 
-##todo:
+## todo:
 Well, there's a few things to do namely:
 - gracefully handle a file that are no longer present
 - gracefully handle non text/ASCII based files 
@@ -22,7 +22,7 @@ Well, there's a few things to do namely:
 - port this to Windows
 - give me some ideas?
 
-##Special note:
+## Special note:
 ***I did not write this. This is not my code***  
 
 I have published this [with permission](http://serverfault.com/a/542580/322904) because it has become EXTREMELY useful to me and I will eventually make some changes to make it more suitable for my needs. But for right now, it works PERFECTLY. In fact, I will gladly hand this repo over to Jack if he so desires, alternatively, feel free to pull and push any changes as you see fit. You, [Sir Jack](http://serverfault.com/users/142829/jack), have answered an age old question that has been unanswered at the command line level (so far as I've determined).
